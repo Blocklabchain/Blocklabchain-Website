@@ -1,0 +1,105 @@
+.slider-section {
+    display: grid;
+    grid-template-columns: 17vw auto;
+    padding-top: 15vw;
+}
+.work .slider-section__h5 {
+    margin-top: 1.4vw;
+}
+.web3 .slider-section__h5 {
+    margin-top: 3.5vw;
+}
+.slider-section__desc {
+    grid-column: 2/3;
+    margin-top: 0.7vw;
+    max-width: 32vw;
+}
+.work__change-slide-btns {
+    margin-top: 16vw;
+}
+.web3__change-slide-btns {
+    margin-top: 13vw;
+}
+.slider-section__swiper {
+    margin-top: 1.7vw;
+}
+.work .slider-section__swiper {
+    height: calc(37vw + 0.8vw);
+}
+.web3 .slider-section__swiper {
+    height: calc(24.45vw + 0.8vw);
+}
+.slider-section__slide {
+    display: flex;
+    gap: 1vw;
+    padding-top: 0.4vw;
+    padding-bottom: 0.4vw;
+}
+.slider-section__slide-img {
+    height: 100%;
+}
+
+.web3 .gradient-effect {
+    width: 29.87vw;
+    height: 19.05vw;
+    top: 3vw;
+    left: 25vw;
+    filter: blur(160px) !important;
+}
+
+@media screen and (max-width: 1050px) {
+    .slider-section {
+        padding-top: 60px;
+        grid-template-columns: 25vw auto;
+    }
+    .work .slider-section__h5 {
+        margin-top: 5px;
+    }
+    .web3 .slider-section__h5 {
+        margin-top: 25px;
+    }
+    .slider-section__desc.p-s {
+        font-size: 14px;
+        margin-top: 12px;
+        max-width: 320px;
+    }
+    .slider-section__swiper {
+        margin-top: 26px;
+    }
+    .work .slider-section__swiper {
+        height: calc(50vw + 0.8vw);
+    }
+    .web3 .slider-section__swiper {
+        height: calc(34.45vw + 0.8vw);
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .slider-section {
+        grid-template-columns: 85px 1fr;
+        column-gap: 5vw;
+        padding-right: 0;
+    }
+    .web3 {
+        padding-top: 120px;
+    }
+    .slider-section__h2,
+    .slider-section__desc {
+        padding-right: 5vw;
+    }
+    .slider-section__swiper {
+        grid-column: 1/-1;
+    }
+    .work .slider-section__swiper,
+    .web3 .slider-section__swiper {
+        height: 54vw;
+    }
+    .slider-section swiper-container::part(container) {
+        padding-bottom: 20px;
+    }
+    .slider-section swiper-container::part(scrollbar) {
+        background: #0C041A;
+    }
+  
+}
+

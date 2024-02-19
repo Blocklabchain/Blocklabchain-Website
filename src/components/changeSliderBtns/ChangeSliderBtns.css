@@ -1,0 +1,16 @@
+.swiper-change-btns {
+    display: flex;
+    gap: 0.8vw;
+  }
+.vertical {
+flex-direction: column;
+}
+.vertical .swiper-change-btn-prev {
+order: 1;
+}
+.swiper-change-btn {
+width: 3.1vw;
+}
+.swiper-change-vector {
+width: 100%;
+}

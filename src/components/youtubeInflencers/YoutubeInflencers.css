@@ -1,0 +1,176 @@
+.youtube-inflencers {
+    padding-top: 15vw;
+}
+.youtube-inflencers__Boxes {
+    margin-top: 1.5vw;
+    display: flex;
+    gap: 2vw;
+}
+.youtube-inflencers__box {
+    padding: 0.7vw 0.86vw 2.24vw 0.86vw; 
+}
+.youtube-inflencers__box-bg-wrapper {
+    z-index: 1;
+    position: relative;
+}
+.youtube-inflencers__box-bg {
+    width: 100%;
+}
+.youtube-inflencers__box-icon-wrapper {
+    width: 3.2vw;
+    height: 3.2vw;
+    background-color: #201932;
+    padding: 0.2vw;
+    margin-top: -2vw;
+    margin-left: 0.6vw;
+    z-index: 2;
+    position: relative;
+    border-radius: 50%;
+    border-top: #5543a3 1px solid;
+}
+.youtube-inflencers__box-icon {
+    width: 100%;
+    object-fit: cover;
+}
+.youtube-inflencers__infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.7vw;
+}
+.youtube-inflencers__infos-sub-heading {
+    color: var(--paragraph-clr);
+    margin-top: 0.3vw;
+}
+.youtube-inflencers__youtube-logo-wrapper {
+    width: 2.6vw;
+    height: 2.6vw;
+    background-color: #26233c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+.youtube-inflencers__youtube-logo {
+    width: 1.65vw;
+}
+.youtube-inflencers__statistics {
+    display: flex;
+    margin-top: 1.75vw;
+}
+.youtube-inflencers__statistic {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 0.2vw;
+}
+.youtube-inflencers__statistic:last-of-type {
+    border-right: none;
+}
+.youtube-inflencers__statistics-label {
+    font-size: 0.6vw;
+    color: var(--paragraph-clr);
+}
+.youtube-inflencers__gradient-effect {
+    width: 37.54vw;
+    height: 22.08vw;
+}
+.youtube-inflencers__gradient-effect-left {
+    left: -20vw;
+}
+.youtube-inflencers__gradient-effect-right {
+    right: -20vw;
+}
+
+@media screen and (max-width: 1200px) {
+    .youtube-inflencers__statistics-label {
+        font-size: 0.75vw;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .youtube-inflencers {
+        padding-top: 70px;
+    }
+    .youtube-inflencers__Boxes {
+        margin-top: 32px;
+        gap: 16px;
+    }
+    .youtube-inflencers__box {
+        padding: 10px 
+    }
+    .youtube-inflencers__box-icon-wrapper {
+        width: 58px;
+        height: 58px;
+        background-color: #201932;
+        padding: 3px;
+        margin-top: -40px;
+        margin-left: 6px;
+    }
+    .youtube-inflencers__box-icon {
+        width: 100%;
+        object-fit: cover;
+    }
+    .youtube-inflencers__infos {
+        margin-top: 10px;
+        gap: 5px;
+    }
+    .youtube-inflencers__infos-sub-heading {
+        margin-top: 2px;
+    }
+    .youtube-inflencers__youtube-logo-wrapper {
+        width: 32px;
+        height: auto;
+        background-color: #26233c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .youtube-inflencers__youtube-logo {
+        width: 32px;
+    }
+    .youtube-inflencers__statistics {
+        margin-top: 39px;
+        flex-wrap: wrap;
+        row-gap: 1vw;
+    }
+    .youtube-inflencers__statistics-label {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .youtube-inflencers {
+        padding-top: 40px;
+    }
+    .youtube-inflencers__Boxes {
+        gap: 24px;
+        flex-direction: column;
+    }
+    .youtube-inflencers__box {
+        padding: 16px 16px 30px 
+    }
+    .youtube-inflencers__youtube-logo-wrapper {
+        width: 52px;
+        height: 52px;
+    }
+    .youtube-inflencers__statistics {
+        row-gap: 3px;
+        column-gap: 3vw;
+        align-items: center;
+    }
+    .youtube-inflencers__statistic {
+        padding-left: 0;
+        padding-right: 0;
+        border: 0;
+        gap: 3px;
+    }
+    .youtube-inflencers__statistics-line {
+        width: 2px;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}

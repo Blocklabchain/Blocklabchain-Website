@@ -1,0 +1,98 @@
+.alert {
+    padding-top: 0;
+    margin-top: -13vw;
+}
+.alert__box {
+    border-radius: 26px;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 3.7vw;
+    padding-left: 3.5vw;
+    padding-right: 1vw;
+    position: relative;
+}
+.alert__icon {
+    width: 25vw;
+    margin-top: -5vw;
+}
+.alert__no-longer-p {
+    margin-top: 1.15vw;
+}
+.alert__if-need-p {
+    margin-top: 0.95vw;
+}
+.alert__if-need-link {
+    color: var(--white);
+    text-decoration: underline;
+}
+.alert__box-shadow {
+    width: 63vw;
+    height: 2.5vw;
+    position: absolute !important;
+    bottom: -2.55vw;
+    left: 50%;
+    transform: translate(-50%);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    z-index: -1 !important;
+}
+.alert__gradient-effect {
+    width: 20vw;
+    height: 20vw;
+    filter: blur(90px) !important;
+    top: 1vw;
+    left: 23vw;
+    z-index: 0 !important;
+    transform: none !important;
+    background: linear-gradient(92.67deg, #9665FF 2.64%, #6023FF 73.68%) !important;
+}
+
+@media screen and (max-width: 1050px) {
+    .alert__box {
+        padding-top: 49px;
+        padding-bottom: 49px;;
+        padding-left: 3.5vw;
+        padding-right: 2vw;
+        border-radius: 20px;
+    }
+    .alert__icon {
+        width: 30vw;
+        margin-top: -5vw;
+    }
+    .alert__no-longer-p.p-l,
+    .alert__if-need-p.p-l {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .alert__box-shadow {
+        width: 80vw;
+        bottom: -2.35vw;
+    }
+}
+@media screen and (max-width: 620px) {
+    .alert__box {
+        text-align: center;
+        flex-direction: column;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+    .alert__icon {
+        width: 55vw;
+        margin-top: -20vw;
+    }
+    .alert__no-longer-p.p-l,
+    .alert__if-need-p.p-l {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .alert__box-shadow {
+        width: 80vw;
+        bottom: -2.35vw;
+    }
+    .alert__box-shadow {
+        height: 25px;
+        bottom: -25px;
+    }
+}

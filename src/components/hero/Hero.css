@@ -1,0 +1,102 @@
+.hero {
+    padding-top: 5.82vw;
+}
+.hero__h1 {
+    line-height: 1.05;
+    margin-top: 1.1vw;
+}
+.hero__h1-big-part {
+    font-size: 5vw;
+    font-weight: 500;
+}
+.hero__h1-small-part {
+    font-size: 3.75vw;
+    font-weight: 400;
+}
+.hero__desc {
+    max-width: 26vw;
+    font-size: 2.1vw;
+    line-height: 1.3;
+    margin-top: .8vw;
+    background: linear-gradient(101.78deg, #9B5EFF 5.32%, #625FFD 102.38%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.hero__blockchain-graphic {
+    width: 100%;
+    position: absolute;
+    top: -4vw;
+    right: 0;
+    pointer-events: none;
+}
+.hero button {
+    font-size: .9vw;
+    padding: 0.9vw 2.4vw;
+    margin-top: 2vw;
+}
+.hero__gradient-effect-top {
+    width: 23.88vw;
+    height: 22.05vw;
+    top: -13vw;
+    left: -10vw;
+}
+.hero__gradient-effect-bottom {
+    width: 21.27vw;
+    height: 33.3vw;
+    top: 10vw;
+    right: 14vw;
+}
+
+@media screen and (max-width: 1050px) {
+    .hero__h1 {
+        line-height: 1.05;
+        margin-top: 11px;
+    }
+    .hero__h1-big-part {
+        font-size: 44px;
+    }
+    .hero__h1-small-part {
+        font-size: 40px;
+    }
+    .hero__desc {
+        max-width: 255px;
+        font-size: 18px;
+        line-height: 1.3;
+        margin-top: 13px;
+    }
+    .hero button {
+        font-size: 14px;
+        padding: 14px 48px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+.hero {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+}
+.hero__txt {
+    order: 1;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.hero__blockchain-graphic {
+    width: 160%;
+    margin-top: -5vw;
+    margin-left: -60vw;
+    position: static;
+    order: 2;
+}
+.hero__gradient-effect-top {
+    width: 50vw;
+    height: 37vw;
+    top: -14vw;
+    left: -9vw;
+}
+.hero__gradient-effect-bottom.gradient-effect {
+    display: none;
+}
+}

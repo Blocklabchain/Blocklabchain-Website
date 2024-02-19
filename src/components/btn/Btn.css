@@ -1,0 +1,9 @@
+.main__btn {
+    font-family: var(--MADE-TOMMY);
+    text-transform: uppercase;
+    background: linear-gradient(101.78deg, #9C60FF 5.32%, #6C4AFF 102.38%);
+    border-radius: 3px;
+}
+.main__btn:hover {
+    background: linear-gradient(101.78deg, #9C60FF 39%, #6C4AFF 102.38%);
+}
