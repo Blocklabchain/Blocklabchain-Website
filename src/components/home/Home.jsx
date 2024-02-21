@@ -18,7 +18,7 @@ const Home = ({windowWidth, handleButtonClick, activeServicesbtn}) => {
   return (
     <>
     <Hero />
-    <About />
+    <About windowWidth = {windowWidth} />
     <Services windowWidth = {windowWidth} handleButtonClick = {handleButtonClick} activeServicesbtn = {activeServicesbtn}/>
     <SliderSection {...workData} windowWidth = {windowWidth} />
     <SliderSection {...web3Data} windowWidth = {windowWidth} />

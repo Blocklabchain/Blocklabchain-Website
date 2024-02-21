@@ -18,8 +18,9 @@ const Footer = ({handleButtonClick}) => {
         <h5 className='footer__links-column-name'>{columnName}</h5>
         
         {
-        (columnName === 'resources') ? links.map((link, i) => <NavLink to={link.link} className='footer__link'  key={i} onClick={link.special === 'services' ? (() => handleButtonClick(link.name)) : link.special === 'sub-page' ? (() => window.scrollTo(0, 0)) : empty}>{link.name}</NavLink>) : 
-        links.map((link, i) => <Link to={link.link} smooth className='footer__link'  key={i} onClick={link.special === 'services' ? (() => handleButtonClick(link.name)) : empty}>{link.name}</Link>)
+        (columnName === 'resources') ? 
+        (links.map((link, i) => <NavLink to={link.link} className='footer__link'  key={i} onClick={() => window.scrollTo(0, 0)}>{link.name}</NavLink>)) : 
+        (links.map((link, i) => <Link to={link.link} smooth className='footer__link'  key={i} onClick={link.special === 'services' ? (() => handleButtonClick(link.name)) : empty}>{link.name}</Link>))
         }
         
       </div>

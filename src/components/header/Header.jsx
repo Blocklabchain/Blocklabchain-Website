@@ -17,7 +17,7 @@ const [isNavOpen, setIsNavOpen] = useState(false);
 
 
     const toggleNav = () => {
-        setIsNavOpen(!isNavOpen);
+        setIsNavOpen(prevState => !prevState);
       };
 
       const Hamburger = () => {

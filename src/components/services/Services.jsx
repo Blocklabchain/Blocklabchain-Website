@@ -1,5 +1,4 @@
 import './Servises.css' 
-import { useState} from 'react';
 import {ServicesData}  from "../../constants/index";
 import ChangeSliderBtns from '../changeSliderBtns/ChangeSliderBtns'
 

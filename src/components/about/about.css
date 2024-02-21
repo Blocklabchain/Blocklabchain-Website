@@ -36,8 +36,6 @@
         margin-top: 12px;
     }
     .about__boxes {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
         gap: 24px;
         margin-top: 40px
     }
@@ -68,7 +66,12 @@
         margin-top: -40vw;
     }
     .about__boxes {
-        grid-template-columns: 1fr;
+        display: block;
+    }
+    .about__slide {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
     .about__box {
         padding-top: 25px;
