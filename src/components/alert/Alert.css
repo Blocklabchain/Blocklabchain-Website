@@ -25,6 +25,7 @@
 }
 .alert__if-need-link {
     color: var(--white);
+    cursor: pointer;
     text-decoration: underline;
 }
 .alert__box-shadow {

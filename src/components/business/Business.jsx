@@ -1,11 +1,13 @@
 import './Business.css'
 import {businessData}  from "../../constants/index";
 import businessIllustration  from "../../assets/blockchain-bottom-ilustration.png";
+import {useTranslation} from "react-i18next";
 
 
 
 
 const Business = () => {
+  const {t} = useTranslation();
 
   const Box = ({icon, i}) => {
     return (
@@ -17,8 +19,7 @@ const Business = () => {
 
   return (
     <section className='business'>
-        <h2 className='h2-has-bold' data-aos = 'fade-up'>60+Business & <br/>
-        <span className='h2-bold'>Crypto</span> Media</h2>
+        <h2 className='h2-has-bold' data-aos = 'fade-up' dangerouslySetInnerHTML={{__html: t('business_heading')}} />
         <div className="business__boxes">
             {businessData.map((business, i) => <Box key={business.id} icon = {business.icon} i = {i}/>)}
         </div>

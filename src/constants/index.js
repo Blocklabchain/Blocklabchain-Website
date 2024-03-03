@@ -105,7 +105,7 @@ export const Expertise = [
     icon: aboutYearsExperience,
     title: "5+",
     content:
-      "Years of Experience ",
+      "Years of Experience",
   },
   {
     id: "expertise-3",
@@ -344,9 +344,9 @@ export const workData = {
   name: 'work',
   text : {
     subHeading: `our
-                 Websites & APPs 
+                 Websites & APPs
                  Development`,
-    heading: `Proud of 
+    heading: `Proud of
               every work we do`,
     paragraph: 'We treat every project as an opportunity to raise the bar higher and take immense pride in the results.'
   },
@@ -407,7 +407,7 @@ export const web3Data = {
   name: 'web3',
   text : {
     subHeading: 'our web3 ICOs ',
-    heading: `Empowering the 
+    heading: `Empowering the
               future: Our Web3 ICOs`,
     paragraph: 'We treat every project as an opportunity to raise the bar higher and take immense pride in the results.'
   },
@@ -461,22 +461,22 @@ export const clientsData = [
   {
     id: 'client-2',
     logo : client2,
-    number : '$800,101' 
+    number : '$800,101'
   },
   {
     id: 'client-3',
     logo : client3,
-    number : '$210,101,927' 
+    number : '$210,101,927'
   },
   {
     id: 'client-4',
     logo : client4,
-    number : '$50,183,127' 
+    number : '$50,183,127'
   },
   {
     id: 'client-5',
     logo : client1,
-    number : '$610,000' 
+    number : '$610,000'
   },
   {
     id: 'client-6',
@@ -491,11 +491,11 @@ export const clientsData = [
   {
     id: 'client-8',
     logo : client4,
-    number : '$50,183,127' 
+    number : '$50,183,127'
   },
 ]
 
-export const TestimonialsData = [ 
+export const TestimonialsData = [
   {
     id : 'testimonial-1',
     icon : testimonial1,
@@ -684,4 +684,3 @@ export const TestimonialsData = [
   }
  ]
 
- 

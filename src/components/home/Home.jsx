@@ -9,11 +9,12 @@ import Testimonials from '../testimonials/Testimonials'
 import YoutubeInflencers from '../youtubeInflencers/YoutubeInflencers'
 import Business from '../business/Business'
 import Alert from '../alert/Alert'
+import {AskForAQuote} from "../ask-for-a-quote/index.jsx";
+import {useState} from "react";
+import {useTranslation} from "react-i18next";
 
 
 const Home = ({windowWidth, handleButtonClick, activeServicesbtn}) => {
-
-    
 
   return (
     <>

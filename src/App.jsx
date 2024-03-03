@@ -1,9 +1,9 @@
 import { useState, useEffect} from 'react'
 
 import {
-  createBrowserRouter, 
+  createBrowserRouter,
   createRoutesFromElements,
-  Route, 
+  Route,
   RouterProvider
 } from 'react-router-dom'
 
@@ -22,24 +22,24 @@ import RefundServicePolicy from './components/refundServicePolicy/RefundServiceP
 
 
 
-  
+
   function App() {
-    
+
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
 
     Aos.init({duration: 600 })
-  
+
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
     return () => {
     window.removeEventListener('resize', handleResize);
-  
+
   };
   }, [])
-  
+
   const [activeServicesbtn, setActiveServicesbtn] = useState('development');
-  
+
   const handleButtonClick = (name) => {
   setActiveServicesbtn(name);
   };
