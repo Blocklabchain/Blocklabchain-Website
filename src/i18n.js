@@ -180,7 +180,7 @@ i18next
                               'avgViews': 'Vues moyennes',
                                 'business_heading': `60+Entreprises & <br/> <span class='h2-bold'>Crypto</span> Médias`,
                      'alert_title': 'Bonjour les amis',
-                      'alert_desc': `Nous ne fournissons plus de services de site web, de développement, de dApps, de contrats intelligents, de blockchain, de NFT, de CRM, de conception, de marketing et de relations publiques en tant qu'agence car notre équipe est entièrement concentrée sur le développement.`,
+                      'alert_desc': "Nous proposons des services de site web, développement, applications décentralisées, contrats intelligents, blockchain, NFT, CRM, design, marketing et relations publiques en tant qu'agence.",
                       'needServ': `Si vous avez besoin de service <span class='alert__if-need-link'>cliquez sur le lien</span> ou envoyez un e-mail à <a href='mailto:contact@blocklabchain.com' class='alert__if-need-link'>contact@blocklabchain.com</a>`,
                       'tac': 'Conditions Générales',
                         'tac_body': `
@@ -658,7 +658,7 @@ i18next
            'business_heading': `60+Business & <br/> <span class='h2-bold'>Crypto</span> Media`,
 
            'alert_title': 'Hello friends',
-           'alert_desc': 'We are no longer providing website, development, dapps, smart contract, blockchain, NFT, CRM, design, marketing & PR services as an agency cause our team is fully focused on the development.',
+           'alert_desc': 'We offer website, development, decentralized applications, smart contracts, blockchain, NFT, CRM, design, marketing, and PR services as an agency.',
            'needServ': `If you need service <span class='alert__if-need-link'>click on the link</span> click on the link or send email to <a href='mailto:contact@blocklabchain.com' class='alert__if-need-link'>contact@blocklabchain.com</a>`,
 
            'tac': 'Terms And Conditions',
