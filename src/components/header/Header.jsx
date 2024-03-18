@@ -8,6 +8,7 @@ import Btn from '../Btn/Btn'
 import {Chevron} from "../icons/Chevron.jsx";
 import { useTranslation } from 'react-i18next';
 import i18next from "i18next";
+import {Contact} from "../contact/index.jsx";
 
 
 const langs = {
@@ -49,8 +50,9 @@ const Header = ({windowWidth}) => {
     }
 
     return (
+      <>
         <header className='header'>
-            <img className='header__logo' src={logo} data-aos = 'fade-up'/>
+          <img className='header__logo' src={logo} data-aos='fade-up'/>
 
           <nav className={`header__nav ${isNavOpen ? 'open' : ''}`}>
 
@@ -88,6 +90,9 @@ const Header = ({windowWidth}) => {
           {windowWidth > 1050 ? <Btn transDelay={(navLinks.length + 1) * 50}/> : <Hamburger/>}
 
         </header>
+        <Contact/>
+      </>
+
     )
 }
 export default Header

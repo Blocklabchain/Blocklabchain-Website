@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap');
+
+.contact-wrapper {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+}
+
+.contact-btn {
+  background: rgba(156, 96, 255, 0.88);
+  display: flex;
+  width: 142px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 16px;
+  font-family: 'Spline Sans', sans-serif;
+  font-weight: 700;
+  padding: 0;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  box-shadow: inset 0 -5em 0 0 rgb(113, 61, 199);
+}
+
+.contact-modal {
+  position: absolute;
+  width: 390px;
+  background: rgba(247, 250, 252, 1);
+  bottom: 0;
+  right: 0;
+}
+
+.contact-modal-header {
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 29px;
+  box-sizing: border-box;
+}
+
+.contact-modal-header h3 {
+  font-family: ' Spline Sans', sans-serif;
+  color: rgba(21, 22, 26, 1);
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.contact-modal-close-btn {
+  position: absolute;
+  right: 16px;
+}
+
+.contact-modal-body {
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-modal-contact {
+  display: flex;
+   align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  font-family: 'Spline Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contact-modal-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+
+.contact-modal-contact--w {
+  color: rgba(37, 211, 102, 1);
+}
+.contact-modal-contact--w .contact-modal-icon-wrapper {
+  background: rgba(37, 211, 102, 1);
+}
+
+
+.contact-modal-contact--i {
+  color: rgba(195, 42, 163, 1);
+}
+.contact-modal-contact--i .contact-modal-icon-wrapper {
+  background: rgba(195, 42, 163, 1);
+}
+.contact-modal-contact--f {
+  color: rgba(66, 103, 178, 1);
+}
+.contact-modal-contact--f .contact-modal-icon-wrapper {
+  background: rgba(66, 103, 178, 1);
+}
+.contact-modal-contact--t {
+  color: rgba(0, 0, 0, 0.61);
+}
+.contact-modal-contact--t .contact-modal-icon-wrapper {
+  background: rgba(0, 0, 0, 0.61);
+}
+.contact-modal-contact--m {
+  color: rgba(13, 18, 28, 1);
+}
+.contact-modal-contact--m .contact-modal-icon-wrapper {
+  background: rgba(232, 235, 242, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-wrapper {
+    width: 100%;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    justify-content: right;
+  }
+  .contact-modal {
+    width: 100%;
+    max-width: 330px ;
+  }
+  .contact-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+  }
+  .contact-btn span {
+    display: none;
+
+  }
+}
