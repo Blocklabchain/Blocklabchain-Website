@@ -23,7 +23,7 @@ export const Contact = () => {
           <button onClick={() => setIsShow(false)} className={'contact-modal-close-btn'}><CloseIcone2/></button>
         </div>
         <div className={'contact-modal-body'}>
-          <a rel="noreferrer" href={'https://wa.me/33345689002'} target={"_blank"}
+          <a rel="noreferrer" href={'https://wa.me/33766296598'} target={"_blank"}
              className="contact-modal-contact contact-modal-contact--w">
             <div className="contact-modal-icon-wrapper">
               <IconWhatsApp/>
@@ -42,11 +42,11 @@ export const Contact = () => {
           {/*  </div>*/}
           {/*  <span>Facebook</span>*/}
           {/*</a>*/}
-          <a href={'tel:33345689002'} className="contact-modal-contact contact-modal-contact--t">
+          <a href={'tel:33766296598'} className="contact-modal-contact contact-modal-contact--t">
             <div className="contact-modal-icon-wrapper">
               <IconPhone/>
             </div>
-            <span>+33 3 45 68 90 02</span>
+            <span>+33 7 66 29 65 98</span>
           </a>
           <a href={'mailto:contact@blocklabchain.com'} className="contact-modal-contact contact-modal-contact--m">
             <div className="contact-modal-icon-wrapper">

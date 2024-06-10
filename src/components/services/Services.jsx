@@ -2,6 +2,7 @@ import './Servises.css'
 import {ServicesData}  from "../../constants/index";
 import ChangeSliderBtns from '../changeSliderBtns/ChangeSliderBtns'
 import {useTranslation} from "react-i18next";
+import {useState} from "react";
 
 
 const TITLE = '_title';
@@ -9,7 +10,23 @@ const CONTENT = '_content';
 
 const Services = ({windowWidth, handleButtonClick, activeServicesbtn}) => {
   const {t} = useTranslation();
-
+  const [activeIndex, setActiveIndex] = useState(0);
+    const buttons = [{
+        id: 'development',
+        title: t('sevices-btn-1'),
+    }, {
+        id: 'marketing',
+        title: t('sevices-btn-2'),
+    },
+        {
+            id: 'design',
+            title: t('sevices-btn-3'),
+        },
+        {
+            id: 'video',
+            title: t('sevices-btn-4'),
+        }
+    ];
   const Box = ({icon, title, content, i}) => {
 
 
@@ -25,28 +42,12 @@ const Services = ({windowWidth, handleButtonClick, activeServicesbtn}) => {
     )
 }
 
-
     const ButtonGroup = () => {
 
 
         // const buttons = ['development', 'marketing', 'design', 'video'];
 
-      const buttons = [{
-        id: 'development',
-        title: t('sevices-btn-1'),
-    }, {
-        id: 'marketing',
-        title: t('sevices-btn-2'),
-      },
-        {
-          id: 'design',
-          title: t('sevices-btn-3'),
-        },
-        {
-          id: 'video',
-          title: t('sevices-btn-4'),
-        }
-        ];
+
 
 
       return (
@@ -57,7 +58,9 @@ const Services = ({windowWidth, handleButtonClick, activeServicesbtn}) => {
               <swiper-slide
               class='services__btn-panel'
               key={name}
-              onClick={() => handleButtonClick(name.id)}
+              onClick={() => {
+                  handleButtonClick(name.id);
+              }}
               style={{ color: activeServicesbtn === name.id ? 'var(--white)' : 'var(--paragraph-clr)', fontWeight: activeServicesbtn === name.id ? '500' : '400' }}
               >
                 <button className='services__btn'>
@@ -83,7 +86,21 @@ const Services = ({windowWidth, handleButtonClick, activeServicesbtn}) => {
             <ButtonGroup />
         </swiper-container>
 
-       {windowWidth < 620 && <ChangeSliderBtns section = {"services"} direction='hor'/>}
+       {windowWidth < 620 && <ChangeSliderBtns onClick={(v) => {
+           let i = 0;
+           if(v === '+' && activeIndex < buttons.length - 1) {
+                i = activeIndex + 1;
+               setActiveIndex(i)
+               handleButtonClick(buttons[i].id);
+           } else if(v === '-' && activeIndex > 0) {
+               i = activeIndex - 1;
+               setActiveIndex(i)
+               handleButtonClick(buttons[i].id);
+           }
+
+
+
+       }} section = {"services"} direction='hor'/>}
 
         </div>
         <div className="services__boxes">

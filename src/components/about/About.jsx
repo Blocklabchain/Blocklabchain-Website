@@ -27,9 +27,9 @@ const Slider = () => {
   let expertise0 = Expertise[0]
   let expertise1 = Expertise[1]
   let expertise2 = Expertise[2]
-  let expertise3 = Expertise[0]
-  let expertise4 = Expertise[1]
-  let expertise5 = Expertise[2]
+  let expertise3 = Expertise[3]
+  let expertise4 = Expertise[4]
+  let expertise5 = Expertise[5]
 
   return (
     <swiper-container class = "about__swiper" slides-per-view= '1' autoplay>
